@@ -10,6 +10,7 @@ class LIFOCache(BaseCaching):
     """ aninherits caching system
     """
     def __init__(self):
+        """inistate"""
         super().__init__()
         self.__key = []
 
