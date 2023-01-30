@@ -16,6 +16,9 @@ class LIFOCache(BaseCaching):
 
     def put(self, key, item):
         """ put cahce
+        Args:
+            key ([type]): key of dictionary
+            item ([type]): item to insert in dictionary
         """
         if len(self.cache_data) == self.MAX_ITEMS and key not in self.__key:
             discard = self.__key.pop()
