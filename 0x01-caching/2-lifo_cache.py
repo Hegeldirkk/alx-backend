@@ -15,7 +15,8 @@ class LIFOCache(BaseCaching):
         self.__key = []
 
     def put(self, key, item):
-        """put cahce"""
+        """ put cahce
+        """
         if len(self.cache_data) == self.MAX_ITEMS and key not in self.__key:
             discard = self.__key.pop()
             del self.cache_data[discard]
