@@ -7,7 +7,8 @@ from base_caching import BaseCaching
 
 
 class LIFOCache(BaseCaching):
-    """inherits  caching system"""
+    """ aninherits caching system
+    """
     def __init__(self):
         super().__init__()
         self.__key = []
